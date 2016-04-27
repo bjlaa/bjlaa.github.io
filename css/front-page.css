@@ -1,0 +1,9 @@
+.frontpage {
+  min-height: 100%;
+  width: 100%;
+  background-color: #223761;
+  color: white;
+  text-align: center; }
+  .frontpage h1 {
+    color: white;
+    font-size: 400%; }

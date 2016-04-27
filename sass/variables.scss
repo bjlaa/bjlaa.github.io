@@ -1,0 +1,20 @@
+/*
+	Colors
+*/
+$paleblue: #377B99;
+$lightgrey: white;
+$darkblue: #10526F;
+
+/*
+	Box-Shadow
+*/
+.shade {
+	-webkit-box-shadow: 4px 4px 1px 0px rgba(0,0,0,.4);
+	-moz-box-shadow: 4px 4px 1px 0px rgba(0,0,0,.4);
+	box-shadow: 4px 4px 1px 0px rgba(0,0,0,.4);
+}
+
+/*
+	Font Stacks
+*/
+$font: "Helvetica Neue", Arial, sans-serif;

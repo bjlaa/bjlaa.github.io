@@ -1,0 +1,84 @@
+/*
+	SASS Variables
+*/
+@import 'variables';
+@import 'mixins';
+/*
+	General
+*/
+
+html,
+body,
+#main {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+a, nav a, button {
+	min-height: 48px !important;
+	min-width: 48px;
+}
+img,
+a,
+embed,
+object,
+video {
+	max-width: 100%;
+}
+a {
+	display: inline-block;
+	&:link {
+		text-decoration: none;
+		color: white;
+	}
+	&:visited {
+		text-decoration: none;
+		color: white;
+	}
+	&:hover {
+		@media (min-width:768px){
+						
+		}
+		text-decoration: none;
+
+	}
+}
+
+/*
+	Footer
+*/
+footer {
+	width: 100%;
+	height: 100px;
+	font-family: $font;
+	text-align: center;
+	font-size: 90%;
+	margin-top: 10%;
+}
+/*
+	Not Found
+*/
+.not-found {
+	min-height: 100%;
+	width: 100%;
+	background: $paleblue;
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;	
+	font-family: $font;
+	font-size: 300%;
+	font-weight: 100;
+	.nf-text {
+		width: 100%;
+	}
+}
+/*
+	Imports
+*/
+@import 'front-page';
+@import 'skills';
+@import 'work';
+@import 'about-me';
+@import 'loader';
