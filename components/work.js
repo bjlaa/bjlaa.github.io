@@ -5,14 +5,13 @@
 
 import React from "react";
 import {data} from "../scripts/data-model";
-import Footer from '../components/footer.js';
 
 class Work extends React.Component {
 	render() {
 		return (
 			<div id='work' className="work">
+				<div className='title-section-work'>My Work</div>
 				<WorkList data={data} />
-				<Footer />
 			</div>
 		)
 

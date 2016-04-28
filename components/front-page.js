@@ -12,7 +12,6 @@ import Skills from '../components/skills.js';
 import CVResume from '../components/cvresume.js';
 import AboutMe from '../components/about-me.js';
 import Contact from '../components/contact.js';
-import Social from '../components/social.js';
 
 class FrontPage extends React.Component {
 	scrollToDiv(target) {
@@ -29,8 +28,7 @@ class FrontPage extends React.Component {
 	render() {
 		return (
 			<div>
-				<div className="frontpage">	
-					
+				<div className="frontpage">			
 					<Menu scrollToDiv={this.scrollToDiv.bind(this)}/>
 					<div className='arrow' onClick={this.scrollToDiv.bind(this, '#work')}>
 						<i className="fa fa-angle-down" aria-hidden="true"></i>

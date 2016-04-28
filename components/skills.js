@@ -11,8 +11,8 @@ class Skills extends React.Component {
 	render() {
 		return (
 			<div id='skills' className="skills">
+				<div className='title-section-skills'>My Skills</div>
 				<SkillItem data={data} />
-				<Footer />
 			</div>
 		)
 	}

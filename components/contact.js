@@ -2,6 +2,7 @@
 	Contact component
 */
 import React from 'react';
+import Social from '../components/social.js';
 
 class Contact extends React.Component{
 	constructor(props) {
@@ -22,6 +23,7 @@ class Contact extends React.Component{
 	render() {
 		return (
 			<div id='contact'>
+				<div className='contact-section-title'>Contact</div>
 				<form className="contact-me" action="http://formspree.io/benjamin.j.arias@gmail.com"
 	      method="POST" onSubmit={this.validateSending}>
 					<p className="contact-title">{this.props.contactTitle}</p>
@@ -46,6 +48,7 @@ class Contact extends React.Component{
 
 					<input className="form-send" type="submit" value="Send" disabled={this.props.disabled} />
 				</form>
+				<Social />
 			</div>
 
 		)

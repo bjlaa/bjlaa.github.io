@@ -1,17 +1,26 @@
 .work {
-	min-height: 100%;
 	width: 100%;
-	background: $paleblue;
-	color: white;
+	background-color: lightblue;
+	color: $paleblue;
 	display: flex;
 	flex-wrap: wrap;
 	font-family: $font;
 	font-weight: 100;
+	
 
-	.work-list {
-		width: 90%;
+	.title-section-work {
+		font-family: $font;
+		font-size: 40pt;
+		font-weight: 200;
 		text-align: center;
-		padding-left: 5%;
+		width: 100%;
+		margin-top: 70px;
+	}
+	.work-list {
+		width: 80%;
+		margin-left: 10%;
+		margin-top: 40px;
+		text-align: center;
 		@media(max-width:450px){
 			height:350px;
 		}
@@ -19,10 +28,9 @@
 		.work-item {
 			width: 50%;
 			display: inline-block;
-			font-size: 110%;
+			font-size: 20pt;
 			font-weight: 200;
 			padding-top: 2%;
-			background-color: rgba(255,255,255,0.5);
 			@media(max-width:450px){
 				font-size: 100%;
 			}
@@ -31,6 +39,7 @@
 					opacity: 1;
 					font-size: .8em;
 				}
+				font-size: 14pt;
 				opacity: 0;
 				z-index: 1000;
 				background-color: $darkblue;
@@ -72,13 +81,5 @@
 				width: 200px;
 			}
 		}
-	}
-
-	/*
-		Footer / Backbutton
-	*/
-	footer {
-		margin-top: 2%;
-		text-align: center;
 	}
 }
