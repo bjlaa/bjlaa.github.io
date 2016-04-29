@@ -74,7 +74,7 @@ export const data = {
 			class: "skillhtml",
 			imageAlt:"The HTML logo.",
 			imageURL: "css/html.svg",
-			keywords:["HTML5, CSS3, ", "Responsive Design, ", "Animations, ", "Sass"]
+			keywords:["HTML5, CSS3, ", "Responsive Web Design, ", "Animations, ", "SASS"]
 		},
 		{
 			id: "22",
@@ -82,7 +82,7 @@ export const data = {
 			class: "skilljs",
 			imageAlt:"The JS logo.",
 			imageURL: "css/javascript.svg",
-			keywords:["Javascript: ES2015, ", "jQuery, ", "Ajax"]
+			keywords:["Javascript:ES6, ", "jQuery, ", "AJAX, ", "Animations"]
 		},	
 		{
 			id: "23",

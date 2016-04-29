@@ -3,6 +3,7 @@
 */
 import React from 'react';
 import Social from '../components/social.js';
+import Footer from '../components/footer.js';
 
 class Contact extends React.Component{
 	constructor(props) {
@@ -56,6 +57,7 @@ class Contact extends React.Component{
 					<i className="fa fa-angle-up" aria-hidden="true"></i>
 				</div>
 				<div className='back-top'>Back to Top</div>
+				<Footer/>
 			</div>
 
 		)

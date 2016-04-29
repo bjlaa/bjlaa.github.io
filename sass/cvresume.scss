@@ -7,11 +7,18 @@
   background: lightblue;
 	
   .cvresume-title {
+    @media(max-width:767px){
+      font-size: 27pt;
+    }
   	font-size: 40pt;
   	padding-bottom: 50px;
   	padding-top: 150px;
   }
   .cvresume-link {
+    @media(max-width:767px){
+      font-size: 18pt;
+    }
+    text-decoration: underline;
   	font-size: 20pt;
   	font-weight: 100;
   	cursor: pointer;

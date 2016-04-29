@@ -20,7 +20,8 @@
   	margin-top: 40px;
   	text-align: center;
   	@media(max-width:450px){
-  	  height:350px;
+  	  width: 100%;
+      margin-left: 0;
   	}
   	.work-item {
   	  width: 50%;
@@ -32,9 +33,13 @@
   	  	font-size: 100%;
   	  }
   	  .button-work {
+        @media(max-width:450px){
+          padding-top: 30px;
+        }
   	  	@media(max-width:767px){
+          padding-top: 30px;
   	  		opacity: 1;
-  	  		font-size: .8em;
+          font-size: 9pt;
   	  	}
   	  	font-size: 14pt;
   	  	opacity: 0;

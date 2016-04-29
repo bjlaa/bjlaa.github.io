@@ -6,7 +6,6 @@
 import React from 'react';
 import Head from '../components/head.js';
 import Menu from '../components/menu.js';
-import Footer from '../components/footer.js';
 import Work from '../components/work.js';
 import Skills from '../components/skills.js';
 import CVResume from '../components/cvresume.js';
@@ -40,7 +39,7 @@ class FrontPage extends React.Component {
 				<CVResume scrollToDiv={this.scrollToDiv.bind(this)}/>
 				<AboutMe scrollToDiv={this.scrollToDiv.bind(this)}/>
 				<Contact scrollToDiv={this.scrollToDiv.bind(this)}/>
-				<Footer/>
+				
 			</div>
 		)
 	}
