@@ -33,14 +33,13 @@
   	  	font-size: 100%;
   	  }
   	  .button-work {
-        @media(max-width:450px){
-          padding-top: 30px;
-        }
   	  	@media(max-width:767px){
           padding-top: 30px;
   	  		opacity: 1;
           font-size: 9pt;
+          width: 50%
   	  	}
+        display: inline-block;
   	  	font-size: 14pt;
   	  	opacity: 0;
   	  	z-index: 1000;

@@ -9,12 +9,12 @@
     background: linear-gradient($paleblue, transparent 40%),
 				linear-gradient(rgba(128, 128, 128, .3), 
 				rgba(128, 128, 128, .3)), 
-				url('../css/desk-1280.jpg');	
+				url('../css/desk-1280.jpg') no-repeat;	
 	}
   @media (min-width: 451px) and (max-width:1281px) {
   	background: linear-gradient($paleblue, transparent 70%),
 				linear-gradient(rgba(128, 128, 128, .2), rgba(128, 128, 128, 0.2)),
-				url('../css/desk-1280.jpg');
+				url('../css/desk-1280.jpg') no-repeat center;
   }
   @media (min-width: 1282px) {
   	background: linear-gradient($paleblue, transparent 40%),
@@ -65,15 +65,18 @@
   animation: appear 2s ease-in-out, changeCol 3s ease-in-out forwards;
 
   .title-name {
-  	@media (max-width:450px) {
-  	  font-size: 40pt;
+  	@media (max-width:450px){
+  	  font-size: 30pt;
   	  font-weight: 200;
   	  padding-top: 5%;
   	}
-  	@media (min-width:451px) and (max-width:767px) {
-  	  font-size: 60pt;
+  	@media (min-width:451px) and (max-width:767px){
+  	  font-size: 40pt;
   	  font-weight: 200;
   	}
+    @media(min-width:768px) and (max-width:1025px){
+      font-size: 60pt;
+    }
   	margin: 0;
   	padding-top: 3%;
   	font-size: 75pt;
@@ -83,13 +86,16 @@
   }
 
   .title-sub {
-  	@media (max-width:450px) {
-      font-size: 20pt;
+  	@media (max-width:450px){
+      font-size: 18pt;
       font-weight: 100;
     }
-    @media (min-width:451px) and (max-width:767px) {
+    @media (min-width:451px) and (max-width:767px){
       font-size: 30pt;
       font-weight: 100;
+    }
+    @media(min-width:768px) and (max-width:1025px){
+      font-size: 35pt;
     }
     font-size: 45pt;
     font-family: $font;
@@ -110,7 +116,7 @@
   @media (max-width:450px) {
   	margin-top: 240px;
   }
-  @media (min-width:451px) and (max-width:767px) {
+  @media (min-width:451px) and (max-width:767px){
     margin-top: 280px;
   }
   .menu-items {
@@ -118,11 +124,7 @@
   	font-weight: 100;
   	font-size: 20pt;
   	padding: 3%;
-  	@media (max-width:450px) {
-  	  width: 100%;
-  	  font-weight: 200;
-  	}
-  	@media (min-width:451px) and (max-width:767px) {
+  	@media (max-width:767px) {
   	  width: 100%;
   	  font-weight: 200;
   	}
