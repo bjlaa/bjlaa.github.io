@@ -1,16 +1,18 @@
 #contact {
   display: flex;
   flex-wrap: wrap;
+  background-color: lightblue;
 }
 .contact-section-title {
   font-family: $font;
   font-size: 40pt;
   font-weight: 200;
   text-align: center;
-  width: 100%;		
+  width: 100%;
+  color: $darkblue;	
 }
 .contact-me {
-  background: lightblue;
+  background: $paleblue;
   border-radius: 10px;
   font-size: 11pt;
   padding: 2% 2% 5% 2%;
@@ -47,14 +49,17 @@
   .form-send {
     background-color: white;
     font-family: $font; 
-    color: $paleblue;
-    font-size: 100%;
+    color: $darkblue;
+    font-size: 14pt;
     cursor: pointer;
     margin-top: 5%;
   }
   label {
+    font-family: $font;
+    font-weight: 400;
+    color: white;
   	cursor: pointer;
-  	font-size: 110%;
+  	font-size: 13pt;
   }
 }
 /*
@@ -75,23 +80,31 @@
   margin-top: 6%;
   height: 100%;
   width: 30%;
-  color: $darkblue;
 
+  .title-twitter {
+    font-size: 19pt;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: $darkblue;
+  }
   .twitter {
   	width: 100%;
   	margin-left: 50%;
   	text-align: center;
-  	color: $darkblue;
+  	color: white;
   }
   .fa  {
   	font-size: 50pt;
+  }
+  .title-git {
+    @extend .title-twitter;
   }
   .github {
   	width: 100%;
   	text-align: center;
   	margin-left: 50%;
   	padding-top: 25%;
-  	color: $darkblue;
+  	color: white;
   }
 	
   @media(min-width:768px){
@@ -106,4 +119,13 @@
       }
     }			
   }
-}	
+}
+.back-top {
+  width: 100%;
+  font-family: $font;
+  font-weight: 200;
+  font-size: 18pt;
+  text-align: center;
+  color: white;
+  padding-bottom: 40px;
+}

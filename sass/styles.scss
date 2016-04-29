@@ -49,7 +49,7 @@ a {
 */
 
 .arrow-down {
-  color: $darkblue;
+  color: $paleblue;
   font-size: 60pt;
   width: 10%;
   margin-left: 45%;
@@ -57,12 +57,12 @@ a {
   text-align: center;
 }
 .arrow-down:hover {
-  color: $paleblue;
+  color: $darkblue;
   transition: color 0.3s;
 }
 
 .arrow-up {
-  color: $darkblue;
+  color: $paleblue;
   font-size: 60pt;
   width: 10%;
   margin-left: 45%;
@@ -70,7 +70,7 @@ a {
   text-align: center;
 }
 .arrow-up:hover {
-  color: $paleblue;
+  color: $darkblue;
   transition: color 0.3s;
 }
 
@@ -80,30 +80,14 @@ a {
 */
 footer {
   width: 100%;
-  height: 100px;
   font-family: $font;
   text-align: center;
-  font-size: 90%;
-  margin-top: 10%;
+  font-size: 13pt;
+  color: $darkblue;
+  padding-bottom: 20px;
+  background-color: lightblue;
 }
-/*
-  Not Found
-*/
-.not-found {
-  min-height: 100%;
-  width: 100%;
-  background: $paleblue;
-  color: white;
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  font-family: $font;
-  font-size: 300%;
-  font-weight: 100;
-  .nf-text {
-  	width: 100%;
-  }
-}
+
 /*
   Imports
 */
@@ -113,4 +97,3 @@ footer {
 @import 'cvresume';
 @import 'about-me';
 @import 'contact';
-@import 'loader';

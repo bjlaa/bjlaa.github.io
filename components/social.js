@@ -10,11 +10,11 @@ class Social extends React.Component {
 	  <div className='social'>
 
 	    <a className='twitter' href='https://twitter.com/bjlaa'>
-	      <div>Follow me on Twitter</div>
+	      <div className='title-twitter'>Follow me on Twitter</div>
 		  <i className='fa fa-twitter-square'></i>
 		</a>
 		<a className='github' href='https://github.com/bjlaa'>
-		  <div>and on Github!</div>
+		  <div className='title-git'>and on Github!</div>
 		  <i className='fa fa-github-square'></i>
 		</a>
 	  </div>

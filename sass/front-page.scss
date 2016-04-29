@@ -12,9 +12,8 @@
 				url('../css/desk-1280.jpg');	
 	}
   @media (min-width: 451px) and (max-width:1281px) {
-  	background: linear-gradient($paleblue, transparent 40%),
-				linear-gradient(rgba(128, 128, 128, .4), 
-				rgba(128, 128, 128, 0.4)), 
+  	background: linear-gradient($paleblue, transparent 70%),
+				linear-gradient(rgba(128, 128, 128, .2), rgba(128, 128, 128, 0.2)),
 				url('../css/desk-1280.jpg');
   }
   @media (min-width: 1282px) {
