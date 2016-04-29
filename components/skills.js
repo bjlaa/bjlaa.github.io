@@ -11,8 +11,14 @@ class Skills extends React.Component {
 	render() {
 		return (
 			<div id='skills' className="skills">
+				<div className='arrow-up' onClick={this.props.scrollToDiv.bind(this, '#work')}>
+					<i className="fa fa-angle-up" aria-hidden="true"></i>
+				</div>
 				<div className='title-section-skills'>My Skills</div>
 				<SkillItem data={data} />
+				<div className='arrow-down' onClick={this.props.scrollToDiv.bind(this, '#cvresume')}>
+					<i className="fa fa-angle-down" aria-hidden="true"></i>
+				</div>
 			</div>
 		)
 	}

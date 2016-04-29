@@ -12,6 +12,30 @@ export const data = {
   			imageURL: "../css/meetup.svg"
   		},
 		{
+			id: "14",
+			title: "Neighborhood Map",
+			URL:"https://github.com/bjlaa/neighborhood-map",
+			page: "http://bjlaa.github.io/neighborhood-map/",
+			imageURL: "../css/gmaps.png",
+		
+		},
+		{
+			id:"12",
+			title: "Arcade Game Clone",
+			URL: "https://github.com/bjlaa/classic-arcade-game-clone",
+			page:"http://bjlaa.github.io/classic-arcade-game-clone/",
+			imageURL: "../css/game.svg",
+		
+		},
+		{	
+			id:"15",
+			title:"Feed Reader Testing",
+			URL: "https://github.com/bjlaa/feed-reader-testing",
+			page:"http://bjlaa.github.io/feed-reader-testing/",
+			imageURL: "../css/test.svg",
+			
+		},
+		{
 			id:"17",
 			title:"Tournament Results",
 			URL: "https://github.com/bjlaa/tournament-results",
@@ -24,22 +48,8 @@ export const data = {
 			page:"http://bjlaa.github.io/movie-trailer-website/",
 			imageURL: "../css/movie.svg"
 		},
-		{	
-			id:"15",
-			title:"Feed Reader Testing",
-			URL: "https://github.com/bjlaa/feed-reader-testing",
-			page:"http://bjlaa.github.io/feed-reader-testing/",
-			imageURL: "../css/test.svg",
-			
-		},
-		{
-			id: "14",
-			title: "Neighborhood Map",
-			URL:"https://github.com/bjlaa/neighborhood-map",
-			page: "http://bjlaa.github.io/neighborhood-map/",
-			imageURL: "../css/gmaps.png",
-		
-		},
+
+
 		{
 			id: "13",
 			title: "Website Optimisation",
@@ -47,14 +57,6 @@ export const data = {
 			pages: "http://bjlaa.github.io/website-optimization/",
 			imageURL: "../css/speed.svg",
 	
-		},
-		{
-			id:"12",
-			title: "Arcade Game Clone",
-			URL: "https://github.com/bjlaa/classic-arcade-game-clone",
-			page:"http://bjlaa.github.io/classic-arcade-game-clone/",
-			imageURL: "../css/game.svg",
-		
 		},
 		{	
 			id: "11",

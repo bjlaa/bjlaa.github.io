@@ -28,18 +28,18 @@ class FrontPage extends React.Component {
 	render() {
 		return (
 			<div>
-				<div className="frontpage">			
+				<div id='frontpage' className="frontpage">			
 					<Menu scrollToDiv={this.scrollToDiv.bind(this)}/>
-					<div className='arrow' onClick={this.scrollToDiv.bind(this, '#work')}>
+					<div className='arrow-down' onClick={this.scrollToDiv.bind(this, '#work')}>
 						<i className="fa fa-angle-down" aria-hidden="true"></i>
 					</div>
 				</div>
 				<Head />
-				<Work/>
-				<Skills/>
-				<CVResume/>
-				<AboutMe/>
-				<Contact/>
+				<Work scrollToDiv={this.scrollToDiv.bind(this)}/>
+				<Skills scrollToDiv={this.scrollToDiv.bind(this)}/>
+				<CVResume scrollToDiv={this.scrollToDiv.bind(this)}/>
+				<AboutMe scrollToDiv={this.scrollToDiv.bind(this)}/>
+				<Contact scrollToDiv={this.scrollToDiv.bind(this)}/>
 				<Footer/>
 			</div>
 		)

@@ -23,6 +23,9 @@ class Contact extends React.Component{
 	render() {
 		return (
 			<div id='contact'>
+				<div className='arrow-up' onClick={this.props.scrollToDiv.bind(this, '#about')}>
+					<i className="fa fa-angle-up" aria-hidden="true"></i>
+				</div>
 				<div className='contact-section-title'>Contact</div>
 				<form className="contact-me" action="http://formspree.io/benjamin.j.arias@gmail.com"
 	      method="POST" onSubmit={this.validateSending}>
@@ -49,6 +52,10 @@ class Contact extends React.Component{
 					<input className="form-send" type="submit" value="Send" disabled={this.props.disabled} />
 				</form>
 				<Social />
+				<div className='arrow-up' onClick={this.props.scrollToDiv.bind(this, '#frontpage')}>
+					<i className="fa fa-angle-up" aria-hidden="true"></i>
+				</div>
+				<div className='back-top'>Back to Top</div>
 			</div>
 
 		)
