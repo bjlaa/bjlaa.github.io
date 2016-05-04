@@ -113,6 +113,7 @@
 .menu {
   width: 100%;
   margin-top: 450px;
+  background: rgba(255, 255, 255, 0.4);
   @media (max-width:450px) {
   	margin-top: 240px;
   }
@@ -121,9 +122,10 @@
   }
   .menu-items {
   	font-family: $font;
-  	font-weight: 100;
+  	font-weight: 200;
   	font-size: 20pt;
   	padding: 3%;
+    color: $darkblue;
   	@media (max-width:767px) {
   	  width: 100%;
   	  font-weight: 200;
