@@ -16,7 +16,7 @@ class AboutMe extends React.Component {
 				</div>
 				<div className='about-me-title'>About Me</div>
 				<div className="presentation">
-					<img className="img-about" src="../css/ninja.svg" alt="An image of my face"/>
+					<img className="img-about" src="../css/avatar.jpg" alt="An image of my face"/>
 					<p>Hi, my name is Benjamin. I am a Front-End Ninja and Developer based in Berlin, Germany. 
 						I started developing my first websites by taking the Front-End Web Developer Nanodegree at Udacity.  
 						My Diploma obtained I chose to perfect my skills by taking the Senior Web Developer Nanodegree, which I am currently working on.</p> 
