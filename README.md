@@ -1,8 +1,13 @@
 ####################################
+# My Portfolio
 
 Welcome to my portfolio's repository.
-Load index.html in your favourite browser
-in order to see my work.
+
+## Getting Started:
+
+* in command line, once in the folder, run `npm install` 
+* run `gulp`
+* the project can be accessed in your favourite browser by reaching the URL: localhost:3000
 
 ####################################
 
