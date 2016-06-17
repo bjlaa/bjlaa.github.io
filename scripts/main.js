@@ -17,10 +17,10 @@ class App extends React.Component {
 
 
 /*
-	Renders to the DOM element with the id "main"
+	Renders to the DOM element with the id 'main'
 */
 
-var main= document.querySelector("#main");
+var main= document.querySelector('#main');
 ReactDOM.render(<App />, main);
 
 
