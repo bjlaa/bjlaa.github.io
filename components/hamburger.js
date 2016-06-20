@@ -1,11 +1,20 @@
 import React, { Component } from 'react';
 
 class Hamburger extends Component {
+	openMenu() {
+		$('i.fa.fa-bars').toggleClass('disappear');
+		$('i.fa.fa-times').toggleClass('appear');
+	}
+	closeMenu() {
+		$('i.fa.fa-bars').toggleClass('disappear');
+		$('i.fa.fa-times').toggleClass('appear');	
+	}
+
 	render() {
 		return (
-			<div>
-				<i class="fa fa-bars" aria-hidden="true"></i>
-				<i class="fa fa-times" aria-hidden="true"></i>
+			<div className='hamburger'>
+				<i onClick={this.openMenu} className="fa fa-bars" aria-hidden="true"></i>
+				<i onClick={this.closeMenu}className="fa fa-times" aria-hidden="true"></i>
 			</div>
 		)
 	}
