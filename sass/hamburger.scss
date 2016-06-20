@@ -2,6 +2,9 @@
 	width: 100%;
 	text-align: right;
 	position: relative;
+  @media (min-width: 450px){
+    display: none;
+  }
 }
 i.fa.fa-bars {
 	font-size: 30pt;
