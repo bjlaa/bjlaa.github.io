@@ -11,10 +11,11 @@ import Skills from '../components/skills.js';
 import CVResume from '../components/cvresume.js';
 import AboutMe from '../components/about-me.js';
 import Contact from '../components/contact.js';
+import ArrowDown from '../components/arrow-down';
+import Hamburger from '../components/hamburger';
 
 class FrontPage extends React.Component {
 	scrollToDiv(target) {
-		console.log(target);
 		var $target = $(target);
 		var $root = $('html,body');
 		if($target.length) {
@@ -27,12 +28,11 @@ class FrontPage extends React.Component {
 	render() {
 		return (
 			<div>
-				<div id='frontpage' className="frontpage">	
-					<Head />		
+				<div id='frontpage' className="frontpage">
+					<Hamburger />
 					<Menu scrollToDiv={this.scrollToDiv.bind(this)}/>
-					<div className='arrow-down' onClick={this.scrollToDiv.bind(this, '#work')}>
-						<i className="fa fa-angle-down" aria-hidden="true"></i>
-					</div>
+					<Head />		
+					<ArrowDown scrollToDiv={this.scrollToDiv.bind(this, '#work')}/>
 				</div>
 				<Work scrollToDiv={this.scrollToDiv.bind(this)}/>
 				<Skills scrollToDiv={this.scrollToDiv.bind(this)}/>
