@@ -7,20 +7,19 @@
   width: 100%;
   @media (max-width: 450px) {
     background: linear-gradient($paleblue, transparent 40%),
-				linear-gradient(rgba(128, 128, 128, .3), 
-				rgba(128, 128, 128, .3)), 
-				url('../css/desk-1280.jpg') no-repeat;	
+    linear-gradient($paleblue, transparent 20%),
+				url('../css/background2.jpg') no-repeat;	
 	}
   @media (min-width: 451px) and (max-width:1281px) {
-  	background: linear-gradient($paleblue, transparent 70%),
-				linear-gradient(rgba(128, 128, 128, .2), rgba(128, 128, 128, 0.2)),
-				url('../css/desk-1280.jpg') no-repeat center;
+  	background: linear-gradient($paleblue, transparent 20%),
+        linear-gradient($paleblue, transparent 20%),
+				url('../css/background2.jpg') no-repeat center;
   }
   @media (min-width: 1282px) {
-  	background: linear-gradient($paleblue, transparent 40%),
-				linear-gradient(rgba(128, 128, 128, .3), 
-				rgba(128, 128, 128, .3)), 
-				url('../css/desk-1280.jpg') no-repeat center;	
+  	background: linear-gradient($paleblue, transparent 20%), 
+                linear-gradient($paleblue, transparent 20%),
+                linear-gradient($paleblue, transparent 25%),
+				        url('../css/background2.jpg') no-repeat center;	
   }
 	
 
@@ -58,7 +57,7 @@
   }
   text-align: center;
   width: 100%;
-  margin-top:5%;
+  margin-top: 60px;
   animation: changeCol 3s ease-in-out forwards;
 }
 .title-name {
@@ -75,7 +74,6 @@
     font-size: 50pt;
   }
 	margin: 0;
-	padding-top: 3%;
 	font-size: 60pt;
 	font-family: $font;
 	font-weight: 400;
@@ -99,7 +97,8 @@
   font-weight: 400;
   letter-spacing: 2px;
   white-space: nowrap;
-  margin: 3%;
+  margin-top: 3%;
+  margin-bottom: -5%;
 }		
 
 
