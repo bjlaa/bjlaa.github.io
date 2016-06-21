@@ -34,7 +34,7 @@
   min-height: 100vh;
   width: 100%;
   @media (max-width: 450px) {
-    background: linear-gradient($paleblue, transparent 40%),
+    background: linear-gradient($paleblue, transparent 20%),
     linear-gradient($paleblue, transparent 20%),
 				url('../css/background2.jpg') no-repeat center;	
 	}
@@ -63,10 +63,6 @@
 */
 
 .head {
-
-  @media(max-width:767px) {
-    color: $darkblue;
-  }
   text-align: center;
   width: 100%;
   margin-top: -490px;
@@ -76,12 +72,12 @@
 }
 
 .title-name {
-	@media (max-width:450px){
-	  font-size: 30pt;
-	  padding-top: 5%;
-	}
+  @media (max-width:450px){
+    font-size: 40pt;
+    font-weight: 200;
+  }
 	@media (min-width:451px) and (max-width:767px){
-	  font-size: 40pt;
+	  font-size: 48pt;
 	  font-weight: 200;
 	}
   @media(min-width:768px) and (max-width:1025px){
@@ -96,15 +92,16 @@
 }
 
 .title-sub {
-	@media (max-width:450px){
-    font-size: 18pt;
+  @media (max-width:450px){
+    font-size: 24pt;
+    font-weight: 200;
   }
-  @media (min-width:451px) and (max-width:767px){
-    font-size: 30pt;
+  @media (min-width: 451px) and (max-width:767px){
+    font-size: 28pt;
     font-weight: 100;
   }
   @media(min-width:768px) and (max-width:1025px){
-    font-size: 35pt;
+    font-size: 30pt;
   }
   font-size: 35pt;
   font-family: $font;
