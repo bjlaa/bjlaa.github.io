@@ -1,0 +1,70 @@
+/*
+  Menu
+*/
+
+.menu {
+  width: 600px;
+  height: 50px;
+  margin-left: auto;
+  margin-top: 20px;
+  @media (max-width:767px){
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    background-color: #333d3f;
+    display: none;
+  }
+  @media (min-width:768px) and (max-width: 999px){
+    width: 450px;
+  }
+
+}
+.menu-items {
+	font-family: $font;
+	font-weight: 200;
+	font-size: 14pt;
+	padding: 20px 10px 0px 10px;
+  border-bottom: solid 0px white;
+	@media (max-width:767px) {
+	  width: 100%;
+    border-bottom: white solid 1px;
+	}
+  @media (min-width:768px) and (max-width: 999px){
+    font-size: 12pt;
+  }
+	@media (min-width:1000px) and (max-width: 1280px){
+    
+	}
+  @media (min-width:1281px){
+
+  }
+}
+
+.workLink {
+  cursor: pointer;
+}
+.workLink:hover {
+  border-bottom: solid 0px white;
+  
+  @media (min-width: 767px){
+    border-bottom: solid 4px white;
+    transition: border 0.1s ease-in-out;
+  }
+}
+.skillsLink {
+  @extend .workLink;
+}
+.cvresumeLink {
+  @extend .workLink;
+}
+.aboutLink {
+  @extend .workLink;
+}
+.contactLink {
+  @extend .workLink;
+}
+
+.showMenu {
+  display: block;
+  animation: appear 0.3s ease-in-out forwards;
+}

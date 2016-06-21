@@ -2,7 +2,7 @@
 	width: 100%;
 	text-align: right;
 	position: relative;
-  @media (min-width: 450px){
+  @media (min-width: 768px){
     display: none;
   }
 }
@@ -21,6 +21,7 @@ i.fa.fa-times {
 	margin-left: auto;
 	margin-right: 20px;
 	margin-top: 20px;
+  margin-bottom: 10px;
 	display: none;
 }
 
