@@ -69,43 +69,46 @@
   position: absolute;
   color: white;
   animation: changeColor 3s ease-in-out forwards;
+  @media (max-width:450px){
+    margin-top: -400px;
+  }
 }
 
 .title-name {
   @media (max-width:450px){
-    font-size: 40pt;
+    font-size: 24pt;
     font-weight: 200;
   }
 	@media (min-width:451px) and (max-width:767px){
-	  font-size: 48pt;
+	  font-size: 35pt;
 	  font-weight: 200;
 	}
-  @media(min-width:768px) and (max-width:1025px){
-    font-size: 50pt;
+  @media(min-width:768px) and (max-width:900px){
+    font-size: 45pt;
   }
 	margin: 0;
-	font-size: 60pt;
+	font-size: 50pt;
 	font-family: $font;
-	font-weight: 400;
+	font-weight: 100;
 	white-space: nowrap;
 
 }
 
 .title-sub {
   @media (max-width:450px){
-    font-size: 24pt;
-    font-weight: 200;
-  }
-  @media (min-width: 451px) and (max-width:767px){
-    font-size: 28pt;
+    font-size: 13pt;
     font-weight: 100;
   }
-  @media(min-width:768px) and (max-width:1025px){
-    font-size: 30pt;
+  @media (min-width: 451px) and (max-width:767px){
+    font-size: 20pt;
+    font-weight: 100;
   }
-  font-size: 35pt;
+  @media(min-width:768px) and (max-width:900px){
+    font-size: 25pt;
+  }
+  font-size: 30pt;
   font-family: $font;
-  font-weight: 400;
+  font-weight: 100;
   letter-spacing: 2px;
   white-space: nowrap;
   margin-top: 30px;
