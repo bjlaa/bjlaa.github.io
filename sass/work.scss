@@ -28,6 +28,9 @@
 	}
 }
 .work-item {
+  @media (max-width: 470px){
+    width: 50%;
+  }
   width: 33.3%;
   display: inline-block;
   font-size: 14pt;

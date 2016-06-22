@@ -15,7 +15,16 @@ class Skills extends React.Component {
 					<i className="fa fa-angle-up" aria-hidden="true"></i>
 				</div>
 				<div className='title-section-skills'>My Skills</div>
-				<SkillItem data={data} />
+				<div className='skill-row'>
+					<button className='button-skill-left' >
+						<i className="fa fa-arrow-left" aria-hidden="true"></i>
+					</button>
+					<SkillItem data={data} />
+					<button className='button-skill-right'>
+						<i className="fa fa-arrow-right" aria-hidden="true"></i>
+					</button>
+				</div>
+				
 				<div className='arrow-down' onClick={this.props.scrollToDiv.bind(this, '#cvresume')}>
 					<i className="fa fa-angle-down" aria-hidden="true"></i>
 				</div>

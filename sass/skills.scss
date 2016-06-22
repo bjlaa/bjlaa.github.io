@@ -1,109 +1,115 @@
 .skills {
-  min-height: 100%;
+  min-height: 100vh;
+  max-height: 100vh;
   width: 100%;
   background: white;
   color: white;
   padding-bottom: 100px;
   font-family: $font;
-  .title-section-skills {
-  	color: $darkblue;
-  	padding-top: 20px;
-  	font-family: $font;
-  	font-size: 40pt;
-  	font-weight: 200;
-  	text-align: center;
-  	width: 100%;
-  }
-  .skill-list {
-  	padding-top: 40px;
-  	display: flex;
-  	flex-wrap: wrap;		
-  	width: 100%;
-  	text-align: center;
-  	padding-bottom: 3%;
-  	color: $darkblue;
-  	.title-skill {
-  	  font-weight: 400;
-      font-size: 28pt;
-  	  margin:2%;
-  	  line-height: 1.7;
-  	  width: 50%;
-  	  margin-left: 25%;
-  	  margin-bottom: 10%;
-  	  @media (max-width:767px){
-  	  	font-size: 22pt;
-  	  	font-weight: 400;
-  	  }
-  	  @media(min-width:768px) and (max-width:1024px){
-  	  	font-size: 22pt;
-  	  }
-  	}
-  	.skillhtml,
-  	.skilljs,
-  	.skillreact {
-  	  text-align: center;
-  	  @media (max-width:450px){
-  	  	width: 100%;
-  	  	font-size: 100%;
-  	  	font-weight: 300;
-  	  }
-  	  @media (min-width:451px) and (max-width:767px){
-  	  	width: 100%;
-  	  	font-size: 100%;
-  	  	font-weight: 300;
-  	  }
-  	  @media(min-width:768px) and (max-width:1024px){
-  	  	font-size: 100%;
-  	  	width: 33.3%;
-  	  	font-weight: 200;
-  	  }
-  	  @media (min-width: 1025px){
-  	  	font-size: 120%;
-  	  	width: 33.3%;
-  	  }
-  	}
-  	.skillhtml:hover,
-  	.skilljs:hover,
-  	.skillreact:hover {
-  	  .skill-img {
-  	  	@media (min-width:767px){
-  	  	  animation: hop .7s ease-in;
-  	  	}
-  	  }
-  	}
-  	.skill-img {
-  	  width: 50%;
-  	  margin: 0;
-  	  padding-bottom:5%;
-  	  @media (max-width:767px){
-  	  	width: 30%;
-  	  }
-  	}
-  	@keyframes hop {
-  	  0%{
-  	  	transform: translateY(0);
-  	  }
-  	  10% {
-  	  	transform: translateY(-5%);
-  	  }
-  	  30% {
-  	  	transform: translateY(0%);
-  	  }
-  	  50% {
-  	  	transform: translateY(-3%);
-  	  }
-  	  65% {
-  	  	transform: translateY(0%);
-  	  }
-  	  100%{
-  	  	transform: scale(1);
-  	  }
-  	}
-  	.keywords {
-  	  margin-left:auto;
-  	  margin-right:auto;
-  	  line-height: 1.5;
-  	  width: 30%;
-  	}
-  }	
 }
+.title-section-skills {
+	color: $darkblue;
+	padding-top: 20px;
+	font-family: $font;
+	font-size: 40pt;
+	font-weight: 200;
+	text-align: center;
+	width: 100%;
+}
+.skill-row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.button-skill-left {
+  width: 5%;
+  margin-left: 5%;
+  margin-top: 20%;
+  height: 100px;
+  font-size: 19pt;
+  color: $darkblue;
+  background-color: white;
+  border: solid 1px $darkblue;
+}
+.button-skill-right {
+  @extend .button-skill-left;
+  margin-left: 0;
+}
+.skill-list {
+	padding-top: 40px;
+	display: flex;
+	flex-wrap: wrap;		
+	width: 80%;
+	text-align: center;
+	padding-bottom: 3%;
+	color: $darkblue;
+}
+.title-skill {
+  font-weight: 400;
+  font-size: 28pt;
+  margin:2%;
+  line-height: 1.7;
+  width: 50%;
+  margin-left: 25%;
+  margin-bottom: 10%;
+  @media (max-width:767px){
+  	font-size: 22pt;
+  	font-weight: 400;
+  }
+  @media(min-width:768px) and (max-width:1024px){
+  	font-size: 22pt;
+  }
+}
+.skillhtml,
+.skilljs,
+.skillreact {
+  border: solid 0px $darkblue;
+  background: linear-gradient(grey, white 50%),
+              linear-gradient(white, grey),;
+  text-align: center;
+  width: 33%;
+
+}
+.skillhtml:hover,
+.skilljs:hover,
+.skillreact:hover {
+  .skill-img {
+  	@media (min-width:767px){
+  	  animation: hop .7s ease-in;
+  	}
+  }
+}
+.skill-img {
+  width: 50%;
+  margin: 0;
+  padding-bottom:5%;
+  @media (max-width:767px){
+  	width: 30%;
+  }
+}
+@keyframes hop {
+  0%{
+  	transform: translateY(0);
+  }
+  10% {
+  	transform: translateY(-5%);
+  }
+  30% {
+  	transform: translateY(0%);
+  }
+  50% {
+  	transform: translateY(-3%);
+  }
+  65% {
+  	transform: translateY(0%);
+  }
+  100%{
+  	transform: scale(1);
+  }
+}
+.keywords {
+  margin-left:auto;
+  margin-right:auto;
+  line-height: 1.5;
+  width: 30%;
+}	
