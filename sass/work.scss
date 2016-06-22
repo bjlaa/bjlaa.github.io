@@ -1,5 +1,6 @@
 .work {
   width: 100%;
+  max-height: 100%;
   background-color: white;
   color: $paleblue;
   display: flex;
@@ -27,7 +28,7 @@
 	}
 }
 .work-item {
-  width: 50%;
+  width: 33.3%;
   display: inline-block;
   font-size: 14pt;
   font-weight: 400;
@@ -44,17 +45,20 @@
     width: 50%
 	}
   display: inline-block;
-	font-size: 14pt;
+	font-size: 12pt;
+  font-weight: 200;
 	opacity: 0;
 	z-index: 1000;
 	background-color: $darkblue;
 	width: 50%;
 	color: white;
 	padding-top: 3%;
+  border-radius: 15px;
+  padding-top:20px;
 }
 .button-work:hover {
 	@media(min-width:768px){
-	  background-color: white;
+	  background-color: red;
 	  color: $darkblue;
 	  transition: all 5s ease-in-out;
 	}
@@ -83,4 +87,8 @@
   @media(min-width:1025px){
   	width: 130px;
   }
+}
+
+.showmore {
+  max-height: 100%;
 }
