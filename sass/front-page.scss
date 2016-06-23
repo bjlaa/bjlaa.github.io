@@ -70,13 +70,13 @@
   color: white;
   animation: changeColor 3s ease-in-out forwards;
   @media (max-width:450px){
-    margin-top: -400px;
+    margin-top: -380px;
   }
 }
 
 .title-name {
   @media (max-width:450px){
-    font-size: 24pt;
+    font-size: 30pt;
     font-weight: 200;
   }
 	@media (min-width:451px) and (max-width:767px){
@@ -96,7 +96,7 @@
 
 .title-sub {
   @media (max-width:450px){
-    font-size: 13pt;
+    font-size: 19pt;
     font-weight: 100;
   }
   @media (min-width: 451px) and (max-width:767px){
