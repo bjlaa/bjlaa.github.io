@@ -36,10 +36,11 @@
   margin-left: 0;
 }
 .skill-list {
-	padding-top: 40px;
+	padding-top: 100px;
 	display: flex;
 	flex-wrap: wrap;		
 	width: 80%;
+  margin-left: 10%;
 	text-align: center;
 	padding-bottom: 3%;
 	color: $darkblue;
@@ -49,8 +50,9 @@
   font-size: 28pt;
   margin:2%;
   line-height: 1.7;
-  width: 50%;
-  margin-left: 25%;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 10%;
   @media (max-width:767px){
   	font-size: 22pt;
@@ -63,21 +65,50 @@
 .skillhtml,
 .skilljs,
 .skillreact {
+  background-color: white;
   border: solid 0px $darkblue;
-  background: linear-gradient(grey, white 50%),
-              linear-gradient(white, grey),;
+  box-shadow: 0 0 10px 1px gray;
   text-align: center;
   width: 33%;
-
 }
-.skillhtml:hover,
-.skilljs:hover,
-.skillreact:hover {
-  .skill-img {
-  	@media (min-width:767px){
-  	  animation: hop .7s ease-in;
-  	}
+.skill-item:hover {
+  @media (min-width:767px){
+    animation: zoomIn 0.2s ease-in forwards;
+  } 
+  .keywords {
+    display: block;
   }
+}
+.skillhtml:hover {
+  @extend .skill-item:hover;
+  .skilljs {
+    margin-left: 30%;
+  }
+}
+.skilljs:hover {
+  @extend .skill-item:hover;
+  .skillreact {
+    margin-left: 30%;
+  }
+}
+.skillreact:hover {
+  @extend .skill-item:hover;
+}
+@keyframes zoomIn {
+  0% {
+    transform: scale(1, 1);
+
+  }
+  50% {
+    transform: scale(1.2, 1.2) translate(0, -50px) ;
+  }
+  100% {
+    transform: scale(1.2, 1.2)  translate(0, -90px);
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
 .skill-img {
   width: 50%;
@@ -108,6 +139,7 @@
   }
 }
 .keywords {
+  display:none;
   margin-left:auto;
   margin-right:auto;
   line-height: 1.5;
