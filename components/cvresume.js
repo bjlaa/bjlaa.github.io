@@ -9,7 +9,7 @@ class CVResume extends React.Component {
 				</div>
 				<div className='cvresume-title'>My C.V. / Resume</div>
 				<a className='cvresume-link'>Click here to see my Interactive Resume</a>
-				<div className='cvresume-link'>(on development)</div>
+				<div className='cvresume-ondev'>(on development)</div>
 				<div className='arrow-down' onClick={this.props.scrollToDiv.bind(this, '#about')}>
 					<i className="fa fa-angle-down" aria-hidden="true"></i>
 				</div>

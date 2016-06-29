@@ -8,15 +8,18 @@ class Social extends React.Component {
   render() {
 	return (
 	  <div className='social'>
-
-	    <a className='twitter' href='https://twitter.com/bjlaa'>
+	    <div className='twitter'>
 	      <div className='title-twitter'>Follow me on Twitter</div>
-		  <i className='fa fa-twitter-square'></i>
-		</a>
-		<a className='github' href='https://github.com/bjlaa'>
-		  <div className='title-git'>and on Github!</div>
-		  <i className='fa fa-github-square'></i>
-		</a>
+	      <a href='https://twitter.com/bjlaa'>
+		  		<i className='fa fa-twitter-square'></i>
+	      </a>
+			</div>
+			<div className='github'>
+			  <div className='title-git'>and on Github!</div>
+			  <a href='https://github.com/bjlaa'>
+			  	<i className='fa fa-github-square'></i>
+			  </a>
+			</div>
 	  </div>
 	)
   }
