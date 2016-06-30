@@ -110,12 +110,62 @@
   max-height: 100%;
 }
 
-.testing {
-  height: 800px;
-  width: 1000px;
+.project-background {
+  margin-top: 30px;
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  display: none;
+}
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+  width: 800px;
   margin-left: auto;
   margin-right: auto;
-  background-color: red;
-  z-index: -1;
-  display: none;
+  background-color: rgba(128, 128, 128, 0.1);
+}
+.title-project {
+  margin-left: 10%;
+  margin-right: 0;
+  padding-top: 60px;
+  width: 60%;
+  font-size: 30pt;
+  font-weight: 200;
+  height: 30px;
+}
+.project-img {
+  width: 20%;
+  margin-top: 40px;
+  height: 140px;
+}
+.closing-details {
+  width: 5%;
+  padding-left: 40px;
+  padding-top: 5px;
+  font-weight: 400;
+  font-size: 20pt;
+  height: 30px;
+}
+.closing-details:hover {
+  cursor: pointer;
+}
+.project-description {
+  width: 80%;
+  margin-left: 10%;
+}
+.project-page {
+  width: 40%;
+  margin-left: 10%;
+}
+.link-page {
+  text-decoration: underline !important;
+  color: $darkblue !important;
+}
+.project-url {
+  width: 40%;
+}
+.link-url {
+  @extend .link-page;
 }

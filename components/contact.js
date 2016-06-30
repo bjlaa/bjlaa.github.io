@@ -17,15 +17,11 @@ class Contact extends React.Component{
 	render() {
 		return (
 			<div id='contact'>
-				<div className='arrow-up' onClick={this.props.scrollToDiv.bind(this, '#about')}>
+				<div className='arrow-up' onClick={this.props.scrollToDiv.bind(this, '#frontpage')}>
 					<i className="fa fa-angle-up" aria-hidden="true"></i>
 				</div>
 				<div className='contact-section-title'>Contact</div>
 				<Social />
-				<div 
-				onClick={this.props.scrollToDiv.bind(this, '#frontpage')} 
-				className='back-top'
-				>Back to Top</div>
 				<Footer/>
 			</div>
 
