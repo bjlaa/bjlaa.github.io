@@ -35,9 +35,9 @@ class Work extends React.Component {
 
 				<div className='title-section-work'>My Work</div>
 				
-				<ProjectList hideProjectDetails={this.hideProjectDetails.bind(this)} id='project-list' ref='projectList' data={data} />
+				<ProjectList  hideProjectDetails={this.hideProjectDetails.bind(this)} id='project-list' ref='projectList' data={data} />
 				
-				<WorkList id='work-list' ref='list' data={data} showProjectDetails={this.showProjectDetails.bind(this)} />
+				<WorkList scrollToDiv={this.props.scrollToDiv} id='work-list' ref='list' data={data} showProjectDetails={this.showProjectDetails.bind(this)} />
 				
 
 				<div className='arrow-down' onClick={this.props.scrollToDiv.bind(this, '#skills')}>
@@ -69,12 +69,19 @@ class ProjectList extends React.Component {
 }
 
 class WorkList extends React.Component {
-
+	constructor(props) {
+		super(props);
+		this.handleClick = this.handleClick.bind(this);
+	}
+	handleClick(element) {
+		this.props.showProjectDetails.bind(this, element.id)();
+		this.props.scrollToDiv.bind(this, '#work')();
+	}
 	render() {
-		var showProjectDetails = this.props.showProjectDetails;
+		var handleClick = this.handleClick;
 		var work = this.props.data.work.map(function(e) {
 			return (
-				<div onClick={showProjectDetails.bind(this, e.id)} className="work-item" key={e.id} >
+				<div onClick={handleClick.bind(this, e)} className="work-item" key={e.id} >
 					<img className="work-img" src={e.imageURL} alt=""/>
 					<p>{e.title}</p>
 				</div>
@@ -86,6 +93,7 @@ class WorkList extends React.Component {
 			</div>
 		)
 	}
+
 }
 
 export default Work;

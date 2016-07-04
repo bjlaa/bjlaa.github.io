@@ -118,6 +118,9 @@
   display: none;
 }
 .project-container {
+  @media (max-width: 799px){
+    width: 100%;
+  }
   display: flex;
   flex-wrap: wrap;
   height: 500px;
@@ -127,6 +130,10 @@
   background-color: rgba(128, 128, 128, 0.1);
 }
 .title-project {
+  @media (max-width: 609px){
+    font-size: 25pt;
+  }
+  white-space: nowrap;
   margin-left: 10%;
   margin-right: 0;
   padding-top: 60px;
@@ -137,12 +144,14 @@
 }
 .project-img {
   width: 20%;
+  margin-right: 70%;
+  margin-left: 10%;
   margin-top: 40px;
   height: 140px;
 }
 .closing-details {
   width: 5%;
-  padding-left: 40px;
+  padding-left: 25%;
   padding-top: 5px;
   font-weight: 400;
   font-size: 20pt;
@@ -154,18 +163,28 @@
 .project-description {
   width: 80%;
   margin-left: 10%;
+  font-weight: 300;
 }
 .project-page {
   width: 40%;
   margin-left: 10%;
+  font-weight: 300;
 }
 .link-page {
   text-decoration: underline !important;
   color: $darkblue !important;
 }
+.link-page:hover {
+  color: $lightblue;
+  transition: color 0.2s ease-in;
+}
 .project-url {
   width: 40%;
+  font-weight: 300;
 }
 .link-url {
   @extend .link-page;
+}
+.link-url:hover {
+  @extend .link-page:hover;
 }
