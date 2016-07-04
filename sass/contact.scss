@@ -21,6 +21,7 @@
 }
 .social {
   @media(max-width:767px) {
+    display: block;
   	text-align: center;
   	width: 100%;
   }
@@ -40,52 +41,38 @@
 .twitter {
   @media(max-width:767px){
     margin-left: 0;
+    width: 1000px;
   }
-	width: 50%;
+  width: 100%;
 	text-align: center;
 	color: white;
   font-size: 100pt;
 }
 
+i.fa.fa-twitter-square:hover {
+  @media(min-width: 768px) {
+    color: $darkblue;
+    transition: 0.2s color ease-in;    
+  }
+}
+i.fa.fa-github-square:hover {
+  @extend i.fa.fa-twitter-square:hover;
+}
 
 .title-git {
   @extend .title-twitter;
 }
 .github {
-  @media(max-width:767px){
+  @media(min-width:300px) and (max-width:767px){
     margin-left: 0;
-    padding-top:2%;
-    padding-bottom: 10%;
+    width:100vw;
   }
-	width: 50%;
+  width: 100%;
 	text-align: center;
 	color: white;
   font-size: 100pt;
 }
 
-@media(min-width:768px){
-	.twitter:hover{
-    .fa-twitter-square {
-    	animation: swing .6s ease-in-out;
-    }
-  }
-  .github:hover {
-    .fa-github-square {
-    	animation: swing .6s ease-in-out;
-    }
-  }			
-}
-
-.back-top {
-  cursor: pointer;
-  width: 100%;
-  font-family: $font;
-  font-weight: 200;
-  font-size: 18pt;
-  text-align: center;
-  color: white;
-  padding-bottom: 40px;
-}
 
 /*
   Footer
