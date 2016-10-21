@@ -65,12 +65,11 @@
 .head {
   text-align: center;
   width: 100%;
-  margin-top: -490px;
-  position: absolute;
   color: white;
+  margin-top: 90px;
   animation: changeColor 3s ease-in-out forwards;
   @media (max-width:450px){
-    margin-top: -380px;
+
   }
 }
 
@@ -116,8 +115,9 @@
 }	
 
 .arrow-down-fp {
-  width: 100%;
-  padding-top: 400px;
+  margin-bottom: -100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 

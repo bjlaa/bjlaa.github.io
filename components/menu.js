@@ -13,9 +13,6 @@ class Menu extends React.Component {
 				<a className='menu-items' onClick={this.props.scrollToDiv.bind(this, '#skills')}>
 					<div className="skillsLink">Skills</div> 
 				</a>
-				<a className='menu-items' onClick={this.props.scrollToDiv.bind(this, '#cvresume')}>
-					<div className="cvresumeLink">C.V./Resume</div> 
-				</a>	
 				<a className='menu-items' onClick={this.props.scrollToDiv.bind(this, '#about')}>
 					<div className="aboutLink">About Me</div>
 				</a>

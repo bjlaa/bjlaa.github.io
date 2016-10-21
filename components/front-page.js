@@ -1,6 +1,6 @@
 /*
-	Front Page Component
-	<FrontPage />
+Front Page Component
+<FrontPage />
 */
 
 import React from 'react';
@@ -10,22 +10,19 @@ import ArrowDown from '../components/arrow-down';
 import Hamburger from '../components/hamburger';
 
 class FrontPage extends React.Component {
-
-
 	render() {
 		return (
 			<div>
 				<div id='frontpage' className="frontpage">
 					<Hamburger />
-					<Menu scrollToDiv={this.props.scrollToDiv}/>		
+					<Menu scrollToDiv={this.props.scrollToDiv} />
+					<Head />
 					<div className='arrow-down-fp'>
-						<ArrowDown scrollToDiv={this.props.scrollToDiv.bind(this, '#work')}/>
-					</div>	
-				</div>	
-				<Head />			
+						<ArrowDown scrollToDiv={this.props.scrollToDiv.bind(this, '#work')} />
+					</div>
+				</div>
 			</div>
-		
-		)
+		);
 	}
 }
 

@@ -2,9 +2,9 @@
   min-height: 100vh;
   max-height: 100vh;
   width: 100%;
-  background: rgba(128, 128, 128, 0.2);
+  background: rgba(128, 128, 128, 0.1);
   color: white;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   font-family: $font;
 }
 .title-section-skills {
@@ -15,6 +15,7 @@
 	text-align: center;
 	width: 100%;
   background-color: transparent;
+  padding-top: 90px;
 }
 .container-skills {
   display:flex;

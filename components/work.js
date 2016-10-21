@@ -28,21 +28,11 @@ class Work extends React.Component {
 	render() {
 		return (
 			<div id='work' className="work">
-				<div className='arrow-up' onClick={this.props.scrollToDiv.bind(this, '#frontpage')}>
-					<i className="fa fa-angle-up" aria-hidden="true"></i>
-				</div>
-
-
 				<div className='title-section-work'>My Work</div>
 				
 				<ProjectList  hideProjectDetails={this.hideProjectDetails.bind(this)} id='project-list' ref='projectList' data={data} />
 				
 				<WorkList scrollToDiv={this.props.scrollToDiv} id='work-list' ref='list' data={data} showProjectDetails={this.showProjectDetails.bind(this)} />
-				
-
-				<div className='arrow-down' onClick={this.props.scrollToDiv.bind(this, '#skills')}>
-					<i className="fa fa-angle-down" aria-hidden="true"></i>
-				</div>
 			</div>
 		)
 
@@ -75,7 +65,6 @@ class WorkList extends React.Component {
 	}
 	handleClick(element) {
 		this.props.showProjectDetails.bind(this, element.id)();
-		this.props.scrollToDiv.bind(this, '#work')();
 	}
 	render() {
 		var handleClick = this.handleClick;

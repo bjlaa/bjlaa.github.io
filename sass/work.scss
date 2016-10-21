@@ -10,35 +10,41 @@
 }
 .title-section-work {
 	font-family: $font;
-	font-size: 30pt;
+	font-size: 40pt;
 	font-weight: 200;
 	text-align: center;
 	width: 100%;
   background: white;
+  margin-top: 90px;
+  margin-bottom: 30px;
 }
 .work-list {
   background: white;
 	width: 900px;
+  height: 500px;
 	margin-left: auto;
   margin-right: auto;
 	margin-top: 40px;
+  margin-bottom: 90px;
 	text-align: center;
+  overflow: hidden;
+  overflow-y: auto;
 	@media(max-width:450px){
 	  width: 70%;
     margin-left: 15%;
 	}
 }
 .work-item {
-  width: 30%;
+  width: 46%;
   margin: 1%;
   display: inline-block;
   font-size: 12pt;
   font-weight: 400;
   padding-top: 2%;
   border: 1px solid white;
-  border-radius: 15px;
+  border-radius: 10px;
   cursor: pointer;
-  box-shadow: inset 0px 0px 20px 1px grey;
+  box-shadow: inset 0px 0px 0px 1px grey;
   @media(max-width:450px){
   	font-size: 12pt;
     width: 99%;
@@ -53,9 +59,8 @@
 }
 .work-item:hover {    
   @media(min-width:768px){
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(128, 128, 128, 0.1);
     color: $darkblue;
-    box-shadow: inset 0px 0px 8px 1px grey;
     transition: all .3s ease-out;       
   }
   .button-work {
@@ -128,6 +133,7 @@
   margin-left: auto;
   margin-right: auto;
   background-color: rgba(128, 128, 128, 0.1);
+  border-radius: 10px;
 }
 .title-project {
   @media (max-width: 609px){
@@ -144,15 +150,13 @@
 }
 .project-img {
   width: 20%;
-  margin-right: 70%;
-  margin-left: 10%;
-  margin-top: 40px;
+  margin-left: 70%;
   height: 140px;
 }
 .closing-details {
-  width: 5%;
-  padding-left: 25%;
-  padding-top: 5px;
+  width: 4%;
+  padding-left: 26%;
+  padding-top: 10px;
   font-weight: 400;
   font-size: 20pt;
   height: 30px;
@@ -166,25 +170,28 @@
   font-weight: 300;
 }
 .project-page {
-  width: 40%;
+  width: 100%;
   margin-left: 10%;
   font-weight: 300;
+  height: 20px;
 }
 .link-page {
   text-decoration: underline !important;
   color: $darkblue !important;
 }
 .link-page:hover {
-  color: $lightblue;
+  color: $paleblue;
   transition: color 0.2s ease-in;
 }
 .project-url {
-  width: 40%;
+  width: 100%;
+  margin-left: 10%;
   font-weight: 300;
 }
 .link-url {
   @extend .link-page;
 }
 .link-url:hover {
-  @extend .link-page:hover;
+  color: $paleblue;
+  transition: color 0.2s ease-in;  
 }
