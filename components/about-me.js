@@ -14,11 +14,16 @@ class AboutMe extends React.Component {
 				<div className='about-me-title'>About Me</div>
 				<div className="presentation">
 					<img className="img-about" src="../css/avatar.jpg" alt="An image of my face"/>
-					<p>Hi, my name is Benjamin. I am a Front-End Ninja and Developer based in Berlin, Germany. 
-						I started developing my first websites by taking the Front-End Web Developer Nanodegree at Udacity.  
-						My Diploma obtained I chose to perfect my skills by taking the Senior Web Developer Nanodegree, which I am currently working on.</p> 
-					<p>Thank you for visiting my portfolio. This website is completely built in React and Javascript ES6.</p>
-					<p>If you wish to contact me, please scroll down and fill out the form right below.</p>
+					<p>
+						Hi, my name is Benjamin. I am a Front-End Developer/Ninja. 
+						I started developing my first websites 2 years ago. Since then I have 
+						trained myself with online courses in order to master the newest 
+						technologies available. Check out my online resume! (Coming soon)
+					</p> 
+					<p>
+						Thank you for visiting my portfolio. This website is fully 
+						built with React and Javascript ES6.
+					</p>
 				</div>
 			</div>
 		)
