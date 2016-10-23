@@ -20,7 +20,6 @@ class Contact extends React.Component{
 				<div className='arrow-up' onClick={this.props.scrollToDiv.bind(this, '#frontpage')}>
 					<i className="fa fa-angle-up" aria-hidden="true"></i>
 				</div>
-				<div className='contact-section-title'>Contact</div>
 				<Social />
 				<Footer/>
 			</div>
