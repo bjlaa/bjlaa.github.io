@@ -1,70 +1,57 @@
 /*
-	Data model:
+Data model:
 */
 
 export const data = {
-  	work: [
-  		{
-  			id:"18",
-  			title:"Meet-Up Event Planner",
-  			URL: "https://github.com/bjlaa/meet-up-event-planner",
-  			page: "http://bjlaa.github.io/meet-up-event-planner/",
-  			imageURL: "../css/meetup.svg"
-  		},
+	work: [
 		{
-			id: "14",
+			id: '9',
+			title: 'MyNews',
+			URL:'https://github.com/bjlaa/MyNews',
+			page:'',
+			imageURL: '../css/news.svg',
+			description: 'A cool offline first app allowing users to get news via TheGuardian API.',
+		},
+		{
+			id: '10',
+			title: 'Restaurant Viewer',
+			URL: 'https://github.com/bjlaa/restaurant-viewer',
+			page: 'https://bjlaa.github.io/restaurant-viewer/',
+			imageURL: '../css/restaurant.svg',
+			description: "An app displaying a list of restaurants, built using Web Accessibility's best practices.",
+
+		},
+		{
+			id:"11",
+			title:"Meet-Up Event Planner",
+			URL: "https://github.com/bjlaa/meet-up-event-planner",
+			page: "http://bjlaa.github.io/meet-up-event-planner/",
+			imageURL: "../css/meetup.svg",
+			description:'',
+		},
+		{
+			id: "12",
 			title: "Neighborhood Map",
 			URL:"https://github.com/bjlaa/neighborhood-map",
 			page: "http://bjlaa.github.io/neighborhood-map/",
 			imageURL: "../css/gmaps.png",
-		
+			description:'',
 		},
 		{
-			id:"12",
+			id:"13",
 			title: "Arcade Game Clone",
 			URL: "https://github.com/bjlaa/classic-arcade-game-clone",
 			page:"http://bjlaa.github.io/classic-arcade-game-clone/",
 			imageURL: "../css/game.svg",
-		
-		},
-		{	
-			id:"15",
-			title:"Feed Reader Testing",
-			URL: "https://github.com/bjlaa/feed-reader-testing",
-			page:"http://bjlaa.github.io/feed-reader-testing/",
-			imageURL: "../css/test.svg",
-			
+			description:'',
 		},
 		{
-			id:"17",
-			title:"Tournament Results",
-			URL: "https://github.com/bjlaa/tournament-results",
-			imageURL: "../css/tournament.svg"
-		},
-		{
-			id:"16",
-			title:"Movie Trailer Website",
-			URL: "https://github.com/bjlaa/movie-trailer-website",
-			page:"http://bjlaa.github.io/movie-trailer-website/",
-			imageURL: "../css/movie.svg"
-		},
-
-
-		{
-			id: "13",
+			id: "14",
 			title: "Website Optimisation",
 			URL: "https://github.com/bjlaa/website-optimization",
 			pages: "http://bjlaa.github.io/website-optimization/",
 			imageURL: "../css/speed.svg",
-	
-		},
-		{	
-			id: "11",
-			title: "Build A Portfolio Site",
-			URL: "http://github.com/bjlaa/build-a-portfolio-site",
-			page: "http://bjlaa.github.io/build-a-portfolio-site",
-			imageURL: "../css/portfolio.svg",
-
+			description:'',
 		}
 	],
 	skills: [

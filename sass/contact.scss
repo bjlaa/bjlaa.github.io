@@ -28,12 +28,12 @@
   display: flex;
   font-size: 18pt;
   font-family: $font;
-  margin-top: 6%;
-  width: 100%;
+  width: 80%;
+  margin-left: 10%;
 }
 
 .title-twitter {
-  font-size: 19pt;
+  font-size: 14pt;
   font-weight: 400;
   margin-bottom: 20px;
   color: $darkblue;
@@ -52,7 +52,7 @@
 i.fa.fa-twitter-square:hover {
   @media(min-width: 768px) {
     color: $darkblue;
-    transition: 0.2s color ease-in;    
+    transition: 0.2s color ease-in;
   }
 }
 i.fa.fa-github-square:hover {
@@ -81,7 +81,7 @@ footer {
   width: 100%;
   font-family: $font;
   text-align: center;
-  font-size: 13pt;
+  font-size: 9pt;
   color: $darkblue;
   padding-bottom: 20px;
   background-color: lightblue;

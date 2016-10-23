@@ -137,7 +137,7 @@
 }
 .title-project {
   @media (max-width: 609px){
-    font-size: 25pt;
+    font-size: 20pt;
   }
   white-space: nowrap;
   margin-left: 10%;
@@ -154,6 +154,10 @@
   height: 140px;
 }
 .closing-details {
+  @media (max-width: 767px){
+  padding-left: 23%;    
+  }
+  float: left;
   width: 4%;
   padding-left: 26%;
   padding-top: 10px;
@@ -174,6 +178,10 @@
   margin-left: 10%;
   font-weight: 300;
   height: 20px;
+  p {
+    margin: 0;
+    height: 20px;
+  }
 }
 .link-page {
   text-decoration: underline !important;
@@ -184,9 +192,14 @@
   transition: color 0.2s ease-in;
 }
 .project-url {
+  height: 20px;
   width: 100%;
   margin-left: 10%;
   font-weight: 300;
+  p {
+    margin: 0;
+    height: 20px;
+  }
 }
 .link-url {
   @extend .link-page;

@@ -35,7 +35,6 @@ class Work extends React.Component {
 				<WorkList scrollToDiv={this.props.scrollToDiv} id='work-list' ref='list' data={data} showProjectDetails={this.showProjectDetails.bind(this)} />
 			</div>
 		)
-
 	}
 }
 
@@ -44,8 +43,16 @@ class ProjectList extends React.Component {
 		var hideProjectDetails = this.props.hideProjectDetails;
 		var projects = this.props.data.work.map(function(e) {
 			return (
-				<Project hideProjectDetails={hideProjectDetails} ref={e.id} key={e.id} title={e.title} img={e.imageURL}
-								page={e.page} URL={e.URL} id={e.id}
+				<Project 
+					hideProjectDetails={hideProjectDetails} 
+					ref={e.id} 
+					key={e.id} 
+					title={e.title} 
+					img={e.imageURL}
+					page={e.page} 
+					URL={e.URL} 
+					id={e.id}
+					description={e.description}
 				 />
 			)
 		})
