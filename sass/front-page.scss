@@ -40,7 +40,7 @@
   color: white;
   display: flex;
   flex-wrap: wrap;
-  animation: appear 2s ease-in;
+  animation: appear 5s ease-in;
   text-align: center;
 }
 
@@ -61,7 +61,7 @@
 }
 
 .title-name {
-  animation: changeColor 3s ease-in-out forwards;
+  animation: changeColor 3s ease-in forwards;
   @media (max-width:450px){
     font-size: 30pt;
     font-weight: 200;
@@ -82,7 +82,7 @@
 }
 
 .title-sub {
-  animation: changeColor 3s ease-in-out forwards;
+  animation: changeColor 3s ease-in forwards;
   @media (max-width:450px){
     font-size: 19pt;
     font-weight: 100;
