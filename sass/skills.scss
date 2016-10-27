@@ -2,10 +2,12 @@
   min-height: 100vh;
   max-height: 100vh;
   width: 100%;
-  background: rgba(128, 128, 128, 0.1);
+  background: rgba(128, 128, 128, 0.05);
   color: white;
   padding-bottom: 50px;
   font-family: $font;
+  display: flex;
+  flex-wrap: wrap;
 }
 .title-section-skills {
 	color: $darkblue;
@@ -17,24 +19,58 @@
   background-color: transparent;
   padding-top: 90px;
 }
+
+.angle-left {
+  width: 15%;
+  height: 400px;
+  i.fa.fa-angle-left {
+    padding-left: 80%;
+    padding-top: 155px;
+    font-size: 100pt;
+    color: $paleblue;
+  }
+}
+i.fa.fa-angle-left:hover {
+  cursor: pointer;
+  color: $darkblue;
+  transition: all 0.2s ease-in-out;
+}
+.angle-right {
+  @extend .angle-left;
+  i.fa.fa-angle-right {
+    @extend i.fa.fa-angle-left;
+    padding-left: 0%;
+  }
+}
+i.fa.fa-angle-right:hover {
+  @extend i.fa.fa-angle-left:hover;
+}
+
 .container-skills {
   display:flex;
   margin-top: 30px;
   width: 70%;
-  margin-left: 15%;
-  height: 400px;
+}
+
+.container-skill-list {
+  margin-right: auto;
+  margin-left: auto;
+  width: 800px;
+  height: 400px;  
   overflow: hidden;
-  overflow-y: auto;
+  overflow-x: auto;
   background-color: transparent;
   outline: 1px solid #ddd;
 }
 
 
-.skill-list {		
+.skill-list {
 	text-align: center;
 	color: $darkblue;
-  width: 100%;
-
+  background-color: rgba(128, 128, 128, 0.1);
+  width: 2400px;
+  display: flex;
+  transition: transform 0.6s ease-in-out;
 }
 
 
@@ -47,12 +83,11 @@
   }
   display: flex;
   flex-wrap: wrap;
-  border: solid 0px $darkblue;
   text-align: center;
-  width: 90%;
-  margin-left: 5%;
+  width: 800px;
+  padding: 0 10px 0 10px;
   height: 400px;
-  border-bottom: 1px #ddd solid;
+  outline-right: 1px #ddd solid;
 }
 .skillreact {
   border-bottom: 0;

@@ -4,12 +4,12 @@ class Hamburger extends Component {
 	openMenu() {
 		$('i.fa.fa-bars').toggleClass('disappear');
 		$('i.fa.fa-times').toggleClass('appear');
-		$('.menu').toggleClass('showMenu');
+		$('.menu-container').toggleClass('showMenu');
 	}
 	closeMenu() {
 		$('i.fa.fa-bars').toggleClass('disappear');
 		$('i.fa.fa-times').toggleClass('appear');
-		$('.menu').toggleClass('showMenu');
+		$('.menu-container').toggleClass('showMenu');
 	}
 
 	render() {

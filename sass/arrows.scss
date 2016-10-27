@@ -3,19 +3,19 @@
 */
 
 .arrow-down {
-  color: $darkblue;
+  color: $paleblue;
   font-size: 60pt;
   width: 100%;
   text-align: center;
 }
 i.fa.fa-angle-down:hover {
   cursor: pointer;
-  color: $paleblue;
+  color: $darkblue;
   transition: color 0.3s;
 }
 
 .arrow-up {
-  color: $darkblue;
+  color: $paleblue;
   font-size: 60pt;
   width: 100%;
   text-align: center;
@@ -23,6 +23,6 @@ i.fa.fa-angle-down:hover {
 }
 i.fa.fa-angle-up:hover {
   cursor: pointer;
-  color: $paleblue;
+  color: $darkblue;
   transition: color 0.3s;
 }

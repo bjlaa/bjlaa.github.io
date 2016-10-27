@@ -36,24 +36,7 @@
 .frontpage {
   min-height: 100vh;
   width: 100%;
-  @media (max-width: 450px) {
-    background: linear-gradient($paleblue, transparent 20%),
-    linear-gradient($paleblue, transparent 20%),
-				url('../css/background2.jpg') no-repeat center;	
-	}
-  @media (min-width: 451px) and (max-width:1281px) {
-  	background: linear-gradient($paleblue, transparent 20%),
-        linear-gradient($paleblue, transparent 20%),
-				url('../css/background2.jpg') no-repeat center;
-  }
-  @media (min-width: 1282px) {
-  	background: linear-gradient($paleblue, transparent 20%), 
-                linear-gradient($paleblue, transparent 20%),
-                linear-gradient($paleblue, transparent 25%),
-				        url('../css/background2.jpg') no-repeat center;	
-  }
-	
-  background: $paleblue;
+  background: url('../css/background2.jpg') no-repeat center;
   color: white;
   display: flex;
   flex-wrap: wrap;
