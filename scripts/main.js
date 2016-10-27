@@ -8,7 +8,6 @@ import FrontPage from '../components/front-page.js';
 import Work from '../components/work.js';
 import Skills from '../components/skills.js';
 import AboutMe from '../components/about-me.js';
-import Contact from '../components/contact.js';
 
 
 class App extends React.Component {
@@ -29,8 +28,7 @@ class App extends React.Component {
 				<FrontPage scrollToDiv={this.scrollToDiv.bind(this)} />
 				<Work scrollToDiv={this.scrollToDiv.bind(this)}/>
 				<Skills scrollToDiv={this.scrollToDiv.bind(this)}/>
-				<AboutMe scrollToDiv={this.scrollToDiv.bind(this)}/>
-				<Contact scrollToDiv={this.scrollToDiv.bind(this)}/>				
+				<AboutMe scrollToDiv={this.scrollToDiv.bind(this)}/>				
 			</div>
 		)
 	}

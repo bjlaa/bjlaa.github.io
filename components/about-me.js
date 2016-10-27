@@ -4,13 +4,18 @@
 */
 
 import React from "react";
-import Contact from '../components/contact.js';
+import Social from './social';
 
 
 class AboutMe extends React.Component {
 	render() {
 		return (
 			<div id='about' className="about-me">
+			
+				<div className='arrow-up' onClick={this.props.scrollToDiv.bind(this, '#frontpage')}>
+					<i className="fa fa-angle-up" aria-hidden="true"></i>
+				</div>
+
 				<div className='about-me-title'>About Me</div>
 				<div className="presentation">
 					<img className="img-about" src="../css/avatar.jpg" alt="An image of my face"/>
@@ -25,6 +30,7 @@ class AboutMe extends React.Component {
 						built with React and Javascript ES6.
 					</p>
 				</div>
+				<Social />
 			</div>
 		)
 	}

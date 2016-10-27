@@ -10,7 +10,7 @@
   font-weight: 200;
 
   .about-me-title {
-    margin-top: 50px;
+    margin-top: 20px;
   	font-size: 40pt;
   	font-weight: 200;
   	text-align: center;
@@ -21,9 +21,10 @@
   	padding-left: 10%;
   	text-align: center;
   	font-family: $font;
-  	font-size: 12pt;
+  	font-size: 10pt;
   	line-height: 1.5;
   	text-align: center;
+    margin-bottom: 20px;
   	@media (min-width: 768px) {
   	  width: 50%;
   	  margin-left: 15%;
@@ -40,10 +41,75 @@
   	  	width: 150px;
   	  }
       border-radius: 50%;
-      margin-bottom: 40px;
+      margin-bottom: 0px;
   	}
   }
 }
-.about-me footer{
-  font-size: 70%;
+
+/*
+  Social
+*/
+.fa  {
+  font-size: 50pt;
 }
+i {
+  font-size: 9pt;
+}
+.social {
+  @media(max-width:767px) {
+    width: 100%;
+    margin-left: 0%;
+  }
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 18pt;
+  font-family: $font;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.social-message {
+  width: 100%;
+  font-size: 10pt;
+  margin-top: 50px;
+}
+
+.social-section {
+  width: 33%;
+  text-align: center;
+  color: white;
+  font-size: 100pt;
+  margin-top: -60px;
+  a {
+    height: 50px;    
+  }
+
+  i.fa.fa-twitter-square {
+    font-size: 35pt;
+  }
+  i.fa.fa-github-square {
+    font-size: 35pt;
+  }
+  i.fa.fa-linkedin-square {
+    font-size: 35pt;
+  }
+}
+
+i.fa.fa-twitter-square:hover {
+  @media(min-width: 768px) {
+    color: $paleblue;
+    transition: 0.2s color ease-in;
+    cursor: pointer;
+  }
+}
+i.fa.fa-github-square:hover {
+  @extend i.fa.fa-twitter-square:hover;
+}
+i.fa.fa-linkedin-square:hover {
+  @extend i.fa.fa-twitter-square:hover;
+}
+
+
+
+
+

@@ -8,6 +8,7 @@ class Social extends React.Component {
   render() {
 	return (
 	  <div className='social'>
+	  	<div className="social-message">Let's get in touch!</div>
 	    <div className='social-section'>
 	      <a href='https://twitter.com/bjlaa' target="_blank">
 		  		<i className='fa fa-twitter-square'></i>

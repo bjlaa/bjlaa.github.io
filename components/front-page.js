@@ -16,11 +16,9 @@ class FrontPage extends React.Component {
 				<div id='frontpage' className="frontpage">
 					<Hamburger />
 					<Menu scrollToDiv={this.props.scrollToDiv} />
-					<Head />
-					<div className='arrow-down-fp'>
-						<ArrowDown scrollToDiv={this.props.scrollToDiv.bind(this, '#work')} />
-					</div>
+					<ArrowDown scrollToDiv={this.props.scrollToDiv.bind(this, '#work')} />
 				</div>
+				<Head />
 			</div>
 		);
 	}
