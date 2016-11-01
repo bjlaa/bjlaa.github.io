@@ -71,27 +71,27 @@ export const data = {
 	skills: [
 		{
 			id: "21",
-			title: "Web Design",
+			title: "I'm fond of Web Design!",
 			class: "skillhtml",
 			imageAlt:"The HTML logo.",
 			imageURL: "css/html.svg",
-			description:["HTML5, CSS3, ", "Responsive Web Design, ", "Animations, ", "SASS"]
+			description: ['HTML5', 'CSS3', 'SASS', 'Stylus', 'Responsive', 'Bootstrap' ]
 		},
 		{
 			id: "22",
-			title: "Javascript",
+			title: "And I loove Javascript.",
 			class: "skilljs",
 			imageAlt:"The JS logo.",
 			imageURL: "css/javascript.svg",
-			description:["Javascript:ES6, ", "jQuery, ", "AJAX, ", "Animations"]
+			description:['Javascript ES6', 'Service Workers', 'REST APIs']
 		},	
 		{
 			id: "23",
-			title: "Frameworks",
+			title: " Also, I stay up to date with the newest Technologies.",
 			class:"skillreact",
 			imageAlt: "The React logo.",
 			imageURL: "css/React.svg",
-			description:["React, ", "Bootstrap, ", "Backbone / Knockout, ", "Jasmine"]
+			description:['React', 'Redux', 'React-Router', 'Angular', 'Enzyme/Karma(testing)']
 		},	
 	]
 };
