@@ -53,6 +53,7 @@ class ProjectList extends React.Component {
 					URL={e.URL} 
 					id={e.id}
 					description={e.description}
+					tech={e.tech}
 				 />
 			)
 		})

@@ -60,7 +60,7 @@
 }
 .work-item:hover {    
   @media(min-width:768px){
-    background-color: rgba(128, 128, 128, 0.1);
+    background-color: rgba(128, 128, 128, 0.08);
     color: $darkblue;
     transition: all .3s ease-out;       
   }
@@ -125,7 +125,9 @@
 }
 .project-container {
   @media (max-width: 799px){
-    width: 100%;
+    width: 90%;
+    left:5%;
+    top: 135%;
   }
   position: absolute;
   top: 125%;
@@ -149,13 +151,13 @@
   padding-top: 60px;
   width: 60%;
   font-size: 30pt;
-  font-weight: 200;
+  font-weight: 400;
   height: 30px;
 }
 .project-img {
   width: 20%;
-  margin-left: 70%;
-  height: 140px;
+  height: auto;
+  max-height: 20%;
 }
 .closing-details {
   @media (max-width: 767px){
@@ -172,20 +174,35 @@
 .closing-details:hover {
   cursor: pointer;
 }
-.project-description {
-  width: 80%;
+.project-details {
+  width: 60%;
   margin-left: 10%;
-  font-weight: 300;
+  font-weight: 300;  
+}
+.project-description {
+  margin-bottom: 20px;
+}
+.project-tech {
+  background-color: white;
+  border-radius: 3px;
+  div:first-child {
+    text-decoration: underline;
+    margin-bottom: 10px;
+  }
 }
 .project-page {
   width: 100%;
   margin-left: 10%;
   font-weight: 300;
-  height: 20px;
+  max-height: 20px;
   p {
     margin: 0;
     height: 20px;
+    a {
+      height: 20px;
+    }
   }
+
 }
 .link-page {
   text-decoration: underline !important;
@@ -200,6 +217,7 @@
   width: 100%;
   margin-left: 10%;
   font-weight: 300;
+  max-height: 20px;
   p {
     margin: 0;
     height: 20px;

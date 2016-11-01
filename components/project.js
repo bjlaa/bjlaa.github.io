@@ -9,7 +9,7 @@ class Project extends Component {
 		if(this.props.page !== '') {
 			return (
 				<div className='project-page' >
-					<p>You can see a demo of the project&nbsp;
+					<p>Check out the demo for the project&nbsp;
 						<a className='link-page' href={this.props.page} target='_blank'>&#32;here</a>.
 					</p> 
 				</div>
@@ -27,10 +27,17 @@ class Project extends Component {
 					<div className='closing-details' onClick={this.props.hideProjectDetails.bind(this, this.props.id)}>
 						x
 					</div>
+					<div className="project-details">
+						<div className='project-description' >{this.props.description}</div>
+						<div className="project-tech">
+							<div>Technologies used:</div>
+							<div>{this.props.tech}</div>
+						</div>
+					</div>
 					<img className='project-img' src={this.props.img} alt='An image illustrating the project.'/>
-					<div className='project-description' >{this.props.description}</div>
-					<div className='project-url' >
-						<p>Or you see the repository on&nbsp;
+
+					<div className='project-url'>
+						<p>You see the repository on&nbsp;
 							<a className='link-url' href={this.props.URL} target='_blank'> Github</a>.
 						</p>
 					</div>
