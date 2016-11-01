@@ -40,7 +40,7 @@ class Project extends Component {
 					
 
 					<div className='project-url'>
-						<p>You see the repository on&nbsp;
+						<p>You can see the repository on&nbsp;
 							<a className='link-url' href={this.props.URL} target='_blank'> Github</a>.
 						</p>
 					</div>
