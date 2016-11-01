@@ -34,7 +34,10 @@ class Project extends Component {
 							<div>{this.props.tech}</div>
 						</div>
 					</div>
-					<img className='project-img' src={this.props.img} alt='An image illustrating the project.'/>
+					<div className="project-img">
+						<img src={this.props.img} alt='An image illustrating the project.'/>
+					</div>
+					
 
 					<div className='project-url'>
 						<p>You see the repository on&nbsp;
