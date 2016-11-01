@@ -98,7 +98,7 @@ i {
 i.fa.fa-twitter-square:hover {
   @media(min-width: 768px) {
     color: $paleblue;
-    transition: 0.2s color ease-in;
+    transition: 0.2s color;
     cursor: pointer;
   }
 }

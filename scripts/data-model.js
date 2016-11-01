@@ -75,7 +75,7 @@ export const data = {
 			class: "skillhtml",
 			imageAlt:"The HTML logo.",
 			imageURL: "css/html.svg",
-			description: ['HTML5', 'CSS3', 'SASS', 'Stylus', 'Responsive', 'Bootstrap' ]
+			description: 'I eat HTML5 and CSS3 for breakfast! Responsive design is my go-to on everyone of my projects. Mastering and using Bootstrap can be a big help on that matter. I also use CSS preprocessors in order to write awesome stylesheets (SASS, Stylus).',
 		},
 		{
 			id: "22",
@@ -83,15 +83,15 @@ export const data = {
 			class: "skilljs",
 			imageAlt:"The JS logo.",
 			imageURL: "css/javascript.svg",
-			description:['Javascript ES6', 'Service Workers', 'REST APIs']
+			description: "I use Javascript ES6 on a daily basis, and I keep an eye out for the latest ES7 features. Also, I specialized myself in Offline-First Web Apps, using Service Workers and IndexedDB in order to provide the best User Experience possible. Let's face it, using cool REST APIs is great and it enriches the UX; that's why I try work with those as often as I can.",
 		},	
 		{
 			id: "23",
-			title: " Also, I stay up to date with the newest Technologies.",
+			title: "Working with frameworks is great!",
 			class:"skillreact",
 			imageAlt: "The React logo.",
 			imageURL: "css/React.svg",
-			description:['React', 'Redux', 'React-Router', 'Angular', 'Enzyme/Karma(testing)']
+			description:'I really enjoy working with React. I use it along with Redux and React-Router. For the testing, I have a preference for the wombo-combo Enzyme/Karma/mocha. I also have experience with Angular, Knockout, Backbone and Rails.'
 		},	
 	]
 };
