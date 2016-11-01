@@ -22,12 +22,8 @@ class AboutMe extends React.Component {
 					<p>
 						Hi, my name is Benjamin. I am a Front-End Developer/Ninja. 
 						I started developing my first websites 2 years ago. Since then I have 
-						trained myself with online courses in order to master the newest 
-						technologies available. Check out my online resume! (Coming soon)
-					</p> 
-					<p>
-						Thank you for visiting my portfolio. This website is fully 
-						built with React and Javascript ES6.
+						trained myself with online courses (Udacity, Udemy, TeamTreeHouse, CodeSchool) in order to master the newest 
+						technologies available.
 					</p>
 				</div>
 				<Social />
